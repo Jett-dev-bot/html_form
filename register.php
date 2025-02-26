@@ -3,7 +3,7 @@
     <title>Document</title>
 </head>
     <body>
-    <form action="action.php" method="POST">
+    <form action="action_page.php" method="POST">
         <table>
             <tr>
                 <td> Name: </td>
@@ -20,6 +20,7 @@
                 <td> Country: </td>
                 <td>
                     <select name="country">
+                        <option value="">-SELECT COUNTRY-</option>
                         <option value="PH">Philippines</option>
                         <option value="AUS">Australia</option>
                         <option value="US">United States</option>
@@ -28,7 +29,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="submit" value="Save">
+                    <input type="submit" name="Save" value="Save">
                 </td>
             </tr>
         </table>
