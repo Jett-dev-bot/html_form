@@ -13,7 +13,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "wait lang sir";
+    $database = "wait_lang_sir";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $database);
@@ -26,7 +26,7 @@
 ?>
 
 <?php 
-    $sql = "INSERT INTO student_record (id, full_name, gender, country)
+    $sql = "INSERT INTO student_records (id, full_name, gender, country)
     VALUES (NULL, '$fullname', '$gender', '$country')";
     
     if ($conn->query($sql) === TRUE) {
